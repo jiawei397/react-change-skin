@@ -4,7 +4,7 @@
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
     "start": "node $NODE_DEBUG_OPTION server.js",
-    "dist": "cross-env NODE_ENV=production webpack --progress --profile --colors --config webpack.production.config.js "
+    "dist": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
