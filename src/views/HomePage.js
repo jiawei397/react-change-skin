@@ -4,15 +4,14 @@
 import React from 'react';
 
 class HomePage extends React.Component {
-
+  changeColor() {
+    const color = '#' + (Math.random() + '').slice(2, 8);
+    document.body.style.setProperty('--themeColor', color);
+  }
   render() {
-    const changeColor = ()=> {
-      const color = '#' + (Math.random() + '').slice(2, 8);
-      document.body.style.setProperty('--themeColor',color);
-    }
     return (
       <div className="home-page">
-        <button onClick={changeColor}>随机切换颜色</button>
+        <button onClick={this.changeColor}>随机切换颜色</button>
         <p className='example-line'>
           <span className="label">mainColor</span>
           <span className="display main">main color style</span>
