@@ -1,14 +1,14 @@
 {
-  "name": "react-starter",
+  "name": "react-change-skin",
   "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "description": "一键换肤",
   "scripts": {
     "start": "node $NODE_DEBUG_OPTION server.js",
     "dist": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eaTong/react-starter.git"
+    "url": "git@gitee.com:JiQingYun/react-change-skin.git"
   },
   "keywords": [
     "react",
@@ -23,7 +23,7 @@
     "react-router",
     "custom theme"
   ],
-  "author": "eaTong",
+  "author": "jw",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.0",
