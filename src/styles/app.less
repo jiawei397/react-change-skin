@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  --themeColor: red;
+}
+
+@primary-color: var(--themeColor);
+
+.example-line {
+  display: flex;
+  padding: 10px;
+  .label {
+    width: 10em;
+  }
+  .display {
+    flex: 1;
+    &.main {
+      color: @primary-color;
+    }
+    &.border {
+      border: 1px solid @primary-color;
+    }
+    &.background {
+      background-color: rgba(0, 0, 0, 0.15);
+      color: @primary-color;
+    }
+  }
+}
